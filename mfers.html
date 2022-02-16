@@ -1,0 +1,199 @@
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<!-- 
+THEME: Small Apps | Bootstrap App Landing Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
+DEMO: https://demo.themefisher.com/small-apps/
+GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
+
+Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Intrare | Connecting Web2 and Web3</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+  <!-- MetaMask detect browser -->
+  <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+
+  <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="list-inline-item">
+          <button id="btn-login"  class="btn btn-outline-success my-2 my-sm-0">
+            Connect MetaMask
+          </button>
+        </li>
+        <li class="list-inline-item">
+          <button id="btn-logout" class="btn btn-outline-danger my-2 my-sm-0">
+            Disconnect MetaMask
+          </button>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Explore</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="FAQ.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Utility for owning: mfers</h1>
+				<!-- Page Description -->
+				<p>Shop our partners below for deals, access, and benefits for being an NFT owner</p>
+        <br>
+        <br>
+			</div>
+		</div>
+	</div>
+
+
+<!--====  End of Page Title  ====-->
+<!--==============================
+=            Investors           =
+===============================-->
+<section class="founders section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<!-- Featured Member -->
+<div class="founder">
+	<!-- Member Image -->
+	<img class="w-100" src="images/team/merch.png" alt="featured-member">
+	<!-- Name -->
+	<h2>FLS Shop</h2>
+	<!-- position -->
+
+  <!--add store info here!!! -->
+	<cite>Official Website Store</cite>
+	<!-- Description -->
+  <p><a href="https://www.fameladysquad.com/shop" style="color: blue">FLS Shop</a> is the only officail ecommerce site for all your FLS needs.
+    Validate below for a 10% off code that
+    you can use in the store. One time use only!
+  </p>
+  <!-- Social Sites -->
+	<ul class="list-inline social-links">
+		<li class="list-inline-item">
+      <button class="btn btn-primary" onclick="codeUp(output = 'mfers', shop= 'subMerch')" id="btn-nft" >Validate Ownership</button>
+    </li>
+		<li class="list-inline-item">
+      <!-- set this ID to Shop to link back to specific shops-->
+      <div id="subMerch"></div>
+    </li>
+	</ul>
+</div>
+			</div>
+			<div class="col-lg-6">
+				<!-- Featured Member -->
+        <div class="founder">
+          <!-- Member Image -->
+          <img class="w-100" src="images/team/ysh.png" alt="featured-member">
+          <!-- Name -->
+          <h2>Your Company Name</h2>
+          <!-- position -->
+          <cite>Your Tag Line</cite>
+          <!-- Description -->
+          <p>Let the NFT community know why they should be interested in your product.
+            Here is the space to market and make connections.
+            YAGMI. (You Are Gonna Make It)
+          </p>
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <div class="text-center">
+                <button class="btn btn-primary"
+                a href="https://docs.google.com/forms/d/e/1FAIpQLSfFPcIH7gBSMOS-yD5u-wxWCW8PC2WWIImJxTb3W4_V-GUYTQ/viewform?usp=pp_url" 
+                id="btn-nft" class="btn btn-primary">Contact Us</a>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+  
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/moralis.js"></script>
+  <script src="js/moralisDB.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/collection.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
