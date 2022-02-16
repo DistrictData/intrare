@@ -1,0 +1,224 @@
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<!-- 
+THEME: Small Apps | Bootstrap App Landing Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
+DEMO: https://demo.themefisher.com/small-apps/
+GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
+
+Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Intrare | Connecting Web2 and Web3</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<!-- MetaMask detect browser -->
+	<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+
+	<!-- Moralis SDK code -->
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+		<div class="container">
+		  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ti-menu"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="list-inline-item">
+				<button id="address" onclick="login()"  class="btn btn-rounded-icon">
+				  Connect MetaMask
+				</button>
+			  </li>
+			  <li class="list-inline-item">
+				<button onclick="logOut()" class="btn btn-rounded-icon">
+				  Disconnect MetaMask
+				</button>
+			  </li>
+			  <li class="nav-item @@index">
+				<a class="nav-link" href="index.html">Explore</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" href="FAQ.html">FAQ</a>
+				</li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Frequently Asked Questions</h1>
+				<!-- Page Description -->
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+<!--=================================
+=            FAQ Section            =
+==================================-->
+<section class="faq section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 m-auto">
+				<div class="block shadow">
+					<!-- Getting Started -->
+					<div class="faq-item">
+						<!-- Title -->
+						<div class="faq-item-title">
+							<h2>
+								
+							</h2>
+						</div>
+						<!-- Get Started Accordion -->
+						<div id="gstAccordion" data-children=".item">
+						  <!-- Accordion Item 01 -->
+						  <div class="item">
+						  	<div class="item-link">
+							    <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion1">
+							      What does this site do?
+							    </a>
+						  	</div>
+						    <div id="gstAccordion1" class="collapse show accordion-block">
+						      <p>
+								Intrare is a platform that connects NFT communities with a global online marketplace.
+								We help provide NFT utility by providing holders access to discounts, perks, and other benefits 
+								of NFT ownership.
+							  </p>
+						    </div>
+						  </div>
+						  <!-- Accordion Item 02 -->
+						  <div class="item">
+						  	<div class="item-link">
+							    <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion2">
+							      Is it safe to connect to MetaMask?
+							    </a>
+						  	</div>
+						    <div id="gstAccordion2" class="collapse accordion-block">
+						      <p>
+								  Yes. We only request <b>READ</b> access which you approve when you slick "Sign".
+								  You do not interact with smart contracts on our website. Allowing us to read your account
+								  provides us the ability to read metadata from the public blockchain and validate NFT ownership.
+							  </p>
+						    </div>
+						  </div>
+						  <!-- Accordion Item 03 -->
+						  <div class="item">
+						  	<div class="item-link">
+							    <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion3">
+								  I am the community manager of an NFT project, is this for me?
+							    </a>
+						  	</div>
+						    <div id="gstAccordion3" class="collapse accordion-block">
+						      <p>
+								<b>YES!</b> If you are interested in having your NFT community on our site, please fill out 
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSfFPcIH7gBSMOS-yD5u-wxWCW8PC2WWIImJxTb3W4_V-GUYTQ/viewform?usp=pp_url"></a> this form</a>  
+								and we will be in touch shortly!
+							  </p>
+						    </div>
+						  </div>
+						  <!-- Accordion Item 04 -->
+						  <div class="item">
+						  	<div class="item-link">
+							    <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion4">
+							      I own a merch store, is this for me?
+							    </a>
+						  	</div>
+						    <div id="gstAccordion4" class="collapse accordion-block">
+						      <p>
+								  <b>YES!</b> If you are interested in connecting with NFT communites, please fill out 
+								  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfINVCjkUotThOKyVqtV1t1wPA72uXnrhVh5qCF8Eal71OYhw/viewform?usp=pp_url">this form</a>
+								  and we will be in touch shortly!
+							  </p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<!-- Account Accordion -->
+					<!-- Pricing & License Accordion -->
+					<!-- Getting Started Accordion -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of FAQ Section  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+  
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/moralis.js"></script>
+  <script src="js/moralisDB.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/collection.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

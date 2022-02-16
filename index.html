@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Intrare | Connecting Web2 and Web3</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+  <!-- MetaMask detect browser -->
+  <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+
+  <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+    <a class="navbar-brand" href="about.html"><img src="images/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+		<li class="list-inline-item">
+			<button id="btn-login"  class="btn btn-outline-success my-2 my-sm-0">
+			  Connect MetaMask
+			</button>
+		</li>
+		<li class="list-inline-item">
+			<button id="btn-logout" class="btn btn-outline-danger my-2 my-sm-0">
+			  Disconnect MetaMask
+			</button>
+		</li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">Explore</a>
+        </li>
+		<li class="nav-item">
+			<a class="nav-link" href="FAQ.html">FAQ</a>
+		  </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+	<div class="container">
+		<div class="row">
+			<div class="m-auto">
+				<!-- Page Title -->
+				<br>
+				<h1 style="text-align: center; ">Find your community below and access your NFT's utility</h1>
+				<!-- Page Description -->
+				<br>
+				<p style="text-align: center; font-size:48px;">Web3 &#129309 Web2</p>
+			</div>
+		</div>
+	</div>
+
+<!--====  End of Page Title  ====-->
+<!--==============================
+=            Investors           =
+===============================-->
+<section class="section investors">
+	<div class="container">
+		<div class="card-deck"  >
+			<div class="card">
+				<div class="text-center">
+			  		<img src="images/team/fls.png" class="card-img-top" alt="...">
+				</div>
+			  <div class="card-body">
+				<h5 class="card-title">FameLadySquad</h5>
+				<p class="card-text">Fame Lady Squad is the first ever all-female generative avatar collection 
+					on the Ethereum blockchain. This is NFT history. This is HERstory.</p>
+			  </div>
+			  <div class="card-footer">
+				<div class="text-center">
+					<a href="fls.html" class="btn btn-primary">See Partnerships</a>
+				</div>
+			  </div>
+			</div>
+			<div class="card">
+				<div class="text-center">
+					<img src="images/team/mfers.png" class="card-img-top" alt="...">
+			  </div>
+			  <div class="card-body">
+				<h5 class="card-title">mfers</h5>
+				<p class="card-text">mfers are generated entirely from hand drawings by sartoshi. 
+					this project is in the public domain; 
+					feel free to use mfers any way you want.
+				</p>
+			  </div>
+			  <div class="card-footer">
+				<div class="text-center">
+					<a href="mfers.html" class="btn btn-primary">See Partnerships</a>
+				</div>
+			  </div>
+			</div>
+			<div class="card">
+				<div class="text-center">
+					<img src="images/team/yla.png" class="card-img-top" alt="...">
+			  </div>
+			  <div class="card-body">
+				<h5 class="card-title">Your NFT Community</h5>
+				<p class="card-text">Your project description could be right here.
+					Connect your community to artists, companies, and entreprenuers.
+					Click the link below to learn more.
+				</p>
+			  </div>
+			  <div class="card-footer">
+				<div class="text-center">
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfINVCjkUotThOKyVqtV1t1wPA72uXnrhVh5qCF8Eal71OYhw/viewform?usp=pp_url" class="btn btn-primary">Contact Us</a>
+				</div>
+			  </div>
+			</div>
+			
+		  </div>
+	</div>
+</section>
+
+<!--====  End of Section comment  ====-->
+  
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/moralis.js"></script>
+  <script src="js/moralisDB.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/collection.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
