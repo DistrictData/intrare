@@ -60,13 +60,15 @@
           <button id="btn-logout" class="btn btn-outline-danger my-2 my-sm-0">
             Disconnect MetaMask
           </button>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Explore</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="FAQ.html">FAQ</a>
-        </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -76,88 +78,68 @@
 =            Page Title            =
 =================================-->
 
-
+<section class="call-to-action-app section" style="background-image: url('ppl_bg.jpg');">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 m-auto">
+			<div class="m-auto">
 				<!-- Page Title -->
-				<h1>Utility for owning: mfers</h1>
-				<!-- Page Description -->
-				<p>Shop our partners below for deals, access, and benefits for being an NFT owner</p>
-        <br>
-        <br>
-			</div>
-		</div>
-	</div>
-
-
-<!--====  End of Page Title  ====-->
-<!--==============================
-=            Investors           =
-===============================-->
-<section class="founders section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<!-- Featured Member -->
-<div class="founder">
-	<!-- Member Image -->
-	<img class="w-100" src="images/team/merch.png" alt="featured-member">
-	<!-- Name -->
-	<h2>FLS Shop</h2>
-	<!-- position -->
-
-  <!--add store info here!!! -->
-	<cite>Official Website Store</cite>
-	<!-- Description -->
-  <p><a href="https://www.fameladysquad.com/shop" style="color: blue">FLS Shop</a> is the only officail ecommerce site for all your FLS needs.
-    Validate below for a 10% off code that
-    you can use in the store. One time use only!
-  </p>
-  <!-- Social Sites -->
-	<ul class="list-inline social-links">
-		<li class="list-inline-item">
-      <button class="btn btn-primary" onclick="codeUp(output = 'mfer', shop= 'subMerch')" id="btn-nft" >Validate Ownership</button>
-    </li>
-		<li class="list-inline-item">
-      <!-- set this ID to Shop to link back to specific shops-->
-      <div id="subMerch"></div>
-    </li>
-	</ul>
-</div>
-			</div>
-			<div class="col-lg-6">
-				<!-- Featured Member -->
-        <div class="founder">
-          <!-- Member Image -->
-          <img class="w-100" src="images/team/ysh.png" alt="featured-member">
-          <!-- Name -->
-          <h2>Your Company Name</h2>
-          <!-- position -->
-          <cite>Your Tag Line</cite>
-          <!-- Description -->
-          <p>Let the NFT community know why they should be interested in your product.
-            Here is the space to market and make connections.
-            YAGMI. (You Are Gonna Make It)
-          </p>
-          <ul class="list-inline social-links">
-            <li class="list-inline-item">
-              <div class="text-center">
-                <button class="btn btn-primary"
-                a href="https://docs.google.com/forms/d/e/1FAIpQLSfFPcIH7gBSMOS-yD5u-wxWCW8PC2WWIImJxTb3W4_V-GUYTQ/viewform?usp=pp_url" 
-                id="btn-nft" class="btn btn-primary">Contact Us</a>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
+				<h2 style="text-align: center">Your utility for owning: Fame Lady Squad </h2>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-  
+<!--====  End of Page Title  ====-->
+<!--==============================
+=            Investors           =
+===============================-->
+<section class="founders section pt-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="text-center p-2">
+            <img class="w-full" src="images/team/merch.png" alt="Sunset in the mountains">
+          </div>
+          <div class="px-6 py-4" style="margin: 10px">
+            <div class="font-bold text-xl mb-2">The Fame Lady Squad Shop</div>
+            <p><a href="https://www.fameladysquad.com/shop" style="color: blue">FLS Shop</a> is the only officail ecommerce site for all your FLS needs.
+              Validate below for a 10% off code that
+              you can use in the store. One time use only!
+          </div>
+          <div class="px-6 pt-4 pb-2" style="margin: 10px">
+            <button class="btn btn-primary" onclick="codeUp(output = 'FameLadySquad', shop= 'subMerch')" id="btn-nft" >Validate Ownership</button>
+            <div id="subMerch" class="text-center p-3"></div>
+          </div>
+        </div>
+			</div>
+			<div class="col-lg-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="text-center p-2">
+            <img class="w-full" src="images/team/merch.png" alt="Sunset in the mountains">
+          </div>
+          <div class="px-6 py-4" style="margin: 10px">
+            <div class="font-bold text-xl mb-2">Your Company Name</div>
+            <p class="text-gray-700 text-base">
+              Let the NFT community know why they should be interested in your product.
+              Here is the space to market and make connections.
+              YAGMI. (You Are Gonna Make It)
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2" style="margin: 10px">
+            <button class="btn btn-primary"  id="btn-nft" >
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFPcIH7gBSMOS-yD5u-wxWCW8PC2WWIImJxTb3W4_V-GUYTQ/viewform?usp=pp_url">Contact Us </a>
+            </button>
+            <div id="subMerch" class="text-center p-3"></div>
+          </div>
+        </div>
+				<!-- Featured Member -->
+			</div>
+		</div>
+	</div>
+</section>
+
   <!-- JAVASCRIPTS -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/bootstrap/bootstrap.min.js"></script>
